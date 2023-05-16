@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../NavBar';
 import SocialLinks from './SocialLinks';
+import AboutPage from './AboutPage';
 
 const HomePage = ({personalDetails}) => {
 
@@ -8,12 +9,13 @@ const HomePage = ({personalDetails}) => {
     return (
 
         <>
-            <div>
+            <div style={{ overflowY: 'scroll', height: '100vh' }}>
                 <NavBar/>
                 <SocialLinks/>
+                <AboutPage/>
             </div>
         </>
-        
+
     )
 };
 
