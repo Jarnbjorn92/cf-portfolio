@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HomePage = () => {
+const HomePage = ({personalDetails}) => {
 
 
     return (
         <div>
-            Connor Fleming
+            {personalDetails.name}
         </div>
     )
 
