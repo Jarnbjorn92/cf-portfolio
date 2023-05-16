@@ -6,12 +6,14 @@ const HomePage = ({personalDetails}) => {
 
 
     return (
+
         <>
             <div>
                 <NavBar/>
                 <SocialLinks/>
             </div>
         </>
+        
     )
 };
 

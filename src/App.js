@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './components/HomePage';
-import NavBar from './NavBar';
 import LandingPage from './components/LandingPage';
+import AboutPage from './components/AboutPage';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
             <Routes>
               <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />
               <Route path='/home' element={<HomePage personalDetails={personalDetails}/>} />
+              <Route path='/about' element={<AboutPage/>} />
             </Routes>
         </Router>
       </header>

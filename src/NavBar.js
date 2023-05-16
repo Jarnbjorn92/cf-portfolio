@@ -1,5 +1,4 @@
 import React from 'react';
-import SocialLinks from './components/SocialLinks';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -10,6 +9,9 @@ const NavBar = () => {
             <ul>
                 <li>
                     <Link to='/home'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About</Link>
                 </li>
             </ul>
         </div>
