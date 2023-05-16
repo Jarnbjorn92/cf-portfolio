@@ -7,12 +7,11 @@ const NavBar = () => {
 
     return (
         <div>
-        <ul>
-            <li>
-                <Link to='/home'>Home</Link>
-            </li>
-        </ul>
-        <SocialLinks/>
+            <ul>
+                <li>
+                    <Link to='/home'>Home</Link>
+                </li>
+            </ul>
         </div>
     );
 }

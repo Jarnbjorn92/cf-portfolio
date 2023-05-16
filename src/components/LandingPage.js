@@ -7,12 +7,13 @@ const LandingPage = ({personalDetails}) => {
 
 
     return (
-        <div>
+        <div className='landing-container'>
             <h1>{personalDetails.name}</h1>
             <h3>{personalDetails.statement}</h3>
             <Link to='/home'>
-            <button>Enter</button>
+                <button>Enter</button>
             </Link>
+            <SocialLinks/>
         </div>
     )
 }

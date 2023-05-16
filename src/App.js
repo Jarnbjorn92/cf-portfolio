@@ -11,7 +11,7 @@ function App() {
     location: "Glasgow, Scotland",
     email: "connor.fleming1992@gmail.com",
     availability: "Open to work",
-    statement: "Junior software developer driven by the rush and exhilaration that comes with building fullstack applications, bug fixes, and solving technical issues.",
+    statement: "Junior Software Developer",
   };
 
   return (
@@ -20,7 +20,7 @@ function App() {
         <Router>
             <Routes>
               <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />
-              <Route path='/home' element={<HomePage/>} />
+              <Route path='/home' element={<HomePage personalDetails={personalDetails}/>} />
             </Routes>
         </Router>
       </header>
