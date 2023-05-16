@@ -13,20 +13,15 @@ function App() {
     statement: "Junior software developer driven by the rush and exhilaration that comes with building fullstack applications, bug fixes, and solving technical issues.",
   };
 
-  const socialMedia = {
-    linkedIn: "https://www.linkedin.com/in/connor-j-fleming/",
-    gitHub: "https://github.com/Jarnbjorn92",
-  };
-
   return (
     <div className="App">
       <header className="App-header">
-      <Router>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<HomePage personalDetails={personalDetails}/>} />
-        </Routes>
-      </Router>
+        <Router>
+          <NavBar/>
+            <Routes>
+              <Route path='/' element={<HomePage personalDetails={personalDetails}/>} />
+            </Routes>
+        </Router>
       </header>
     </div>
   );
