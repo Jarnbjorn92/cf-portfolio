@@ -8,13 +8,10 @@ const HomePage = ({personalDetails}) => {
 
     return (
 
-        <>
-            <div style={{ overflowY: 'scroll', height: '100vh' }}>
-                <NavBar/>
-                <SocialLinks/>
-                <AboutPage/>
-            </div>
-        </>
+        <div>
+            <NavBar/>
+            <SocialLinks/>
+        </div>
 
     )
 };
