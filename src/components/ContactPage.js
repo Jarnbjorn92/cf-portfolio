@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NavBar from '../NavBar';
 
 const ContactPage = () => {
 
@@ -12,7 +13,9 @@ const ContactPage = () => {
 
 
     return (
+
         <div>
+        <NavBar/>
             <h1>Contact</h1>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -47,6 +50,7 @@ const ContactPage = () => {
                 <button type="submit">Submit</button>
             </form>
         </div>
+        
     )
 };
 
