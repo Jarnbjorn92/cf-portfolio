@@ -2,9 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  /* height: 40vmin;
-  pointer-events: none; */
+.footer-cr {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
