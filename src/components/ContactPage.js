@@ -15,8 +15,10 @@ const ContactPage = () => {
     return (
 
         <div>
+
         <NavBar/>
-            <h1>Contact</h1>
+        <div>
+            Contact
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -50,7 +52,7 @@ const ContactPage = () => {
                 <button type="submit">Submit</button>
             </form>
         </div>
-        
+        </div>
     )
 };
 
