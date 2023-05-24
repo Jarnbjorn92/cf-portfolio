@@ -1,5 +1,6 @@
-import React from 'react'
-import { FiLinkedin, FiGithub } from 'react-icons/fi'
+import React from 'react';
+import { FiLinkedin, FiGithub } from 'react-icons/fi';
+import './SocialLinks.css'
 
 const SocialLinks = () => {
 
@@ -13,7 +14,7 @@ const SocialLinks = () => {
             <a className='social-links' href={socialMedia.linkedIn}><FiLinkedin/></a>
             <a className='social-links' href={socialMedia.gitHub}><FiGithub/></a>
         </div>
-    )
-}
+    );
+};
 
 export default SocialLinks

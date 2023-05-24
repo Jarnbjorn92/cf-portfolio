@@ -1,6 +1,7 @@
 .nav {
     position: relative;
     text-align: right;
+    right: 8%;
 }
 
 .dropdown {

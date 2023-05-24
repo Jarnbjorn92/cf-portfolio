@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
         <Router>
             <Routes>
               <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />
@@ -26,7 +25,6 @@ function App() {
               <Route path='/contact' element={<ContactPage/>} />
             </Routes>
         </Router>
-      </header>
       <div className='footer-cr'>Designed & Developed by Connor Fleming ©</div>
     </div>
   );

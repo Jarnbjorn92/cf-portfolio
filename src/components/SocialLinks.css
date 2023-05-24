@@ -1,0 +1,11 @@
+.social-cont {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 70%;
+}
+
+.social-links {
+    margin: 10px;
+    font-size: 25pt;
+}

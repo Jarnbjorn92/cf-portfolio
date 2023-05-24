@@ -7,7 +7,7 @@ const HomePage = ({personalDetails}) => {
 
 
     return (
-
+        
         <div>
             <NavBar/>
             <SocialLinks/>
