@@ -10,7 +10,7 @@ const LandingPage = ({personalDetails}) => {
         <div className='landing-container'>
             <h1>{personalDetails.name}</h1>
             <h3>{personalDetails.statement}</h3>
-            <Link to='/home'>
+            <Link to='/about'>
                 <button>Enter</button>
             </Link>
             <SocialLinks/>
