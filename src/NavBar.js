@@ -7,9 +7,9 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-      setIsOpen(!isOpen);
+        setIsOpen(!isOpen);
     };
-  
+
     return (
         <div className='nav'>
             <div className='dropdown' onClick={toggleMenu}>
@@ -19,9 +19,6 @@ const NavBar = () => {
                 </button>
             {isOpen && (
                 <ul className='dropdown-menu'>
-                <li>
-                    <Link to='/home'>Home</Link>
-                </li>
                 <li>
                     <Link to='/about'>About</Link>
                 </li>

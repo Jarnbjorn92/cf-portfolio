@@ -8,4 +8,5 @@
 .social-links {
     margin: 10px;
     font-size: 25pt;
+    transition: ease-in;
 }
