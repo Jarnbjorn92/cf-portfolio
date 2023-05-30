@@ -28,11 +28,11 @@ const LandingPage = ({personalDetails}) => {
 
         <>
         <motion.div
-        className="contactInfo"
-        ref={ref}
-        initial={{ x: "50vw", opacity: 0 }}
-        animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-        transition={{ duration: 1, ease: "easeInOut" }}>
+            className="contactInfo"
+            ref={ref}
+            initial={{ x: "50vw", opacity: 0 }}
+            animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}>
 
         <div className='landing-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <div style={{ textAlign: 'center' }}>
@@ -45,8 +45,14 @@ const LandingPage = ({personalDetails}) => {
         </div>
         </motion.div>
         
-        <motion.div ref={ref} initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInVariants}>
+        <motion.div 
+            ref={ref} 
+            initial='hidden' 
+            animate={inView ? 'visible' : 'hidden'} 
+            variants={fadeInVariants}>
+
         <SocialLinks/>
+        
         </motion.div>
         </>
     );
