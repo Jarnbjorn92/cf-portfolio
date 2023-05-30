@@ -1,3 +1,20 @@
-.span {
-    list-style: none;
+.personalContactInfo {
+    font-size: 12pt;
+    padding: 5pt;
+}
+
+.infoType {
+    font-size: 14pt;
+    text-decoration: underline;
+}
+
+.contentTitle {
+    text-decoration: underline;
+}
+
+.socials {
+    padding: 10pt;
+}
+
+.contactInfo {
 }
