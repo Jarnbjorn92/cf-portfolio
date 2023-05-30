@@ -61,8 +61,9 @@ const ContactPage = ({personalDetails}) => {
 
 
     return (
-        <>
+        <div>
         <NavBar/>
+        
         <motion.form
         action=""
         ref={ref}
@@ -162,7 +163,7 @@ const ContactPage = ({personalDetails}) => {
         >
         <SocialLinks/>
         </motion.div>
-        </>
+        </div>
     )
 };
 
