@@ -11,6 +11,18 @@ const LandingPage = ({personalDetails}) => {
         triggerOnce: true,
     });
 
+    const fadeInVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.8,
+                duration: 0.5,
+            },
+        },
+    };
 
     return (
 
@@ -18,9 +30,9 @@ const LandingPage = ({personalDetails}) => {
         <motion.div
         className="contactInfo"
         ref={ref}
-        initial={{ x: "30vw", opacity: 0 }}
+        initial={{ x: "50vw", opacity: 0 }}
         animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}>
+        transition={{ duration: 1, ease: "easeInOut" }}>
 
         <div className='landing-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <div style={{ textAlign: 'center' }}>
@@ -33,8 +45,9 @@ const LandingPage = ({personalDetails}) => {
         </div>
         </motion.div>
         
+        <motion.div ref={ref} initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInVariants}>
         <SocialLinks/>
-        
+        </motion.div>
         </>
     );
 };
