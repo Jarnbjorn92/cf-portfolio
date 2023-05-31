@@ -1,6 +1,7 @@
 import React from 'react';
 import portfolioData from './portfolioData.json';
 import Project from './Project';
+import NavBar from '../../NavBar';
 
 
 const PortfolioPage = () => {
@@ -20,7 +21,10 @@ const PortfolioPage = () => {
         });
 
     return (
-        <div>{portfolioNodes}</div>
+        <div>
+            <NavBar/>
+            {portfolioNodes}
+        </div>
     );
 };
 

@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from './projectImages/close.svg'
+import "./ProjectPage.css";
 
 const Project = ({technologies, title, image, color, id, github, deployed, description}) => {
 
@@ -26,26 +27,21 @@ const Project = ({technologies, title, image, color, id, github, deployed, descr
 
         <motion.div
             ref={ref}
-            className="col-sm-12 col-lg-6"
             variants={variants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
         >
 
-        <div
-            style={{ backgroundColor: color }}
-            className="projectCard d-flex align-items-center justify-content-center p-5"
-            onClick={handleOpenModal}
-        >
-        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
+        <div className="projectCard" onClick={handleOpenModal}>
+        <div className="textWrap">
             <p className="tech">
                 <em>{technologies}</em>
             </p>
             <h3 className="projectTitle">{title}</h3>
                 <span className="viewWork">Click to View More &#8594;</span>
             </div>
-            <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
+            <div className="imageContainer">
                 <img src={image} alt="Home-page" />
             </div>
         </div>
