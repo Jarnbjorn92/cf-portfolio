@@ -1,13 +1,11 @@
 .projectCard {
-    display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 0;
+    padding: 30px;
     margin: 50px;
     background-color: aqua;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
 }
 
 .textWrap {
@@ -33,15 +31,18 @@
 .imageContainer img {
     height: 12em;
     margin-top: 25px;
-    transition: all 1.3s ease-in-out;
 }
 
 .closeModal {
-    margin-left: 250px;
-    margin-top: -20px;
-    scale: -100px;
+    left: 0;
+    width: 20px;
+    height: 20px;
 }
 
 .closeModal:hover {
     filter: brightness(100);
+}
+
+.viewWork {
+    font-style: italic;
 }

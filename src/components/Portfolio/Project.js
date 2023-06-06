@@ -35,15 +35,15 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
 
         <div style={{background: color}} className="projectCard" onClick={handleOpenModal}>
         <div className="textWrap">
+            <h2 className="projectTitle">{title}</h2>
             <p className="tech">
                 <em>{technologies}</em>
             </p>
-            <h3 className="projectTitle">{title}</h3>
                 <span className="viewWork">Click to View More &#8594;</span>
             </div>
-            <div className="imageContainer">
+            {/* <div className="imageContainer">
                 <img src={image} alt="Home-page" />
-            </div>
+            </div> */}
         </div>
         <Modal
             isOpen={showModal}
@@ -66,7 +66,7 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
                     },
                 }}>
 
-            <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+            <img src={closeModal} className="closeModal" onClick={handleCloseModal} alt="Close"></img>
                 <h3 className="modalTitle">{title}</h3>
                 <p className="projectDescription">{description}</p>
                 <button className="btn" onClick={() => (window.open(github))}>

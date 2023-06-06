@@ -12,7 +12,7 @@ const AboutPage = () => {
             <section className='about-me'>
                 <h4>About Me</h4>
                 <div className='description'>
-                <p>I'm Connor, a passionate full stack developer with a deep love for crafting exceptional user experiences on the frontend and optimising powerful backends. As a career changer, I bring a unique blend of soft skills from my previous jobs and an ambitious mindset to the tech scene.</p>
+                <p>I'm Connor, a passionate full stack developer with a deep love for crafting exceptional user experiences on the frontend and optimising backends. As a career changer, I bring a unique blend of soft skills from my previous jobs and an ambitious mindset to the tech scene.</p>
 
                 <p>Driven by a hunger for knowledge and a knack for quickly picking up new technologies, I thrive on learning and expanding my skill set. From frontend frameworks like React, to backend technologies such as Node.js and Spring, I'm dedicated to mastering the stack and all aspects of the developement process.</p>
 
