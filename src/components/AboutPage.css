@@ -1,3 +1,93 @@
-.about-container {
-    /* background-color: black; */
+/* About Me */
+.about-me {
+    padding: 70px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 50px;
 }
+
+.about-me h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.about-me .description {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.about-me p {
+    margin-bottom: 10px;
+}
+
+.about-me a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.about-me a:hover {
+    text-decoration: underline;
+}
+
+
+/* Tech */
+.infoContainer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.tech-section h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tech-section {
+    display: flex;
+    justify-content: center;
+}
+
+.tech-section .description {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.tech-section .description li {
+    flex: 1;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 20px
+}
+
+.skill-description {
+    list-style: none;
+    margin-top: 5px;
+    line-height: 2;
+}
+
+/* Media query for viewport width less than 750px */
+@media (max-width: 750px) {
+    .tech-section {
+        display: grid;
+    }
+    .about-me {
+        padding: 12px;
+    }
+}
+
+
+
+
