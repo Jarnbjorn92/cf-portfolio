@@ -2,15 +2,19 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
-import closeModal from './projectImages/close.svg'
+import closeModal from './projectImages/close.svg';
 import "./ProjectPage.css";
 
-const Project = ({technologies, title, image, color, id, github, deployed, description}) => {
+const Project = ({technologies, title, color, image, id, github, deployed, description}) => {
 
     const [ref, inView] = useInView({
         threshold: 0.5,
         triggerOnce: true,
     });
+    const [showModal, setShowModal] = useState(false);
+
+    const handleOpenModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
 
     const variants = {
         hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
@@ -18,11 +22,7 @@ const Project = ({technologies, title, image, color, id, github, deployed, descr
     };
     
     Modal.setAppElement("#root");
-    
-    const [showModal, setShowModal] = useState(false);
-    const handleOpenModal = () => setShowModal(true);
-    const handleCloseModal = () => setShowModal(false);
-    
+
     return (
 
         <motion.div
@@ -30,10 +30,10 @@ const Project = ({technologies, title, image, color, id, github, deployed, descr
             variants={variants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
         >
 
-        <div className="projectCard" onClick={handleOpenModal}>
+        <div style={{background: color}} className="projectCard" onClick={handleOpenModal}>
         <div className="textWrap">
             <p className="tech">
                 <em>{technologies}</em>
@@ -72,6 +72,7 @@ const Project = ({technologies, title, image, color, id, github, deployed, descr
                 <button className="btn" onClick={() => (window.open(github))}>
                     GitHub Repo
                 </button>
+            {/* DEPLOYED BUTTON */}
             {/* <button className="btn" onClick={() => (window.location.href = deployed)}>
                 Live Link
             </button> */}

@@ -1,7 +1,7 @@
 [
     {
         "title": "Oot'N'Aboot",
-        "image": "./projectImages/Oot'N'Aboot-logo.jpeg",
+        "image": "./projectImages/OotNAboot-logo.jpeg",
         "description": "An event finder mobile app. The user can find events happening in a location, favourite events to a list, buy tickets, and even find other users to go with!",
         "technologies": "JavaScript // Java // React Native // Spring // SQL",
         "github": "https://github.com/Jarnbjorn92/Capstone_OotAndAboot",

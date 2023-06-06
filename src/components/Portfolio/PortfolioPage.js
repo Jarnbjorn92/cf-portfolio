@@ -6,9 +6,10 @@ import NavBar from '../../NavBar';
 
 const PortfolioPage = () => {
 
-    const portfolioNodes = portfolioData.map((project, index) => {
+    const ProjectList = () =>
 
-        return <Project 
+    portfolioData.map((project, index) => (
+        <Project
             key={index}
             id={project.id}
             title={project.title}
@@ -17,15 +18,26 @@ const PortfolioPage = () => {
             color={project.bgcolor}
             github={project.github}
             deployed={project.deployed}
-            description={project.description} />
-        });
+            description={project.description}
+        />
+    ));
 
+    // const imageNodes = portfolioData.map((image, index) => {
+    //     console.log(image.image)
+    //     return <img src={image.image} key={index} alt=""/>
+    // })
+
+    
     return (
         <div>
-            <NavBar/>
-            {portfolioNodes}
+        <NavBar/>
+        
+            <div className='row'>
+                <ProjectList/>
+                
+            </div>
         </div>
     );
 };
 
-export default PortfolioPage
+export default PortfolioPage;
