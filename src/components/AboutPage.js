@@ -1,14 +1,30 @@
 import React from 'react';
 import './AboutPage.css';
 import NavBar from '../NavBar';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 // import SocialLinks from './SocialLinks';
 
 const AboutPage = () => {
+
+    const [ref, inView] = useInView({
+        threshold: 0.5,
+        triggerOnce: true,
+    });
+
 
     return (
         <>
         <div className='about-container'>
         <NavBar/>
+        <motion.div
+            className="contactInfo"
+            ref={ref}
+            initial={{ x: "25vw", opacity: 0 }}
+            animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            >
+
             <section className='about-me'>
                 <h4>About Me</h4>
                 <div className='description'>
@@ -21,6 +37,8 @@ const AboutPage = () => {
                 <p>I invite you to explore my portfolio, where you'll find a collection of my work, including web applications, responsive designs, and interactive experiences. Whether you're a potential client, collaborator, or fellow developer, I'm eager to connect, share insights, and embark on exciting projects together.</p>
                 </div>
             </section>
+            
+
             
             <section className='tech-section'>
                 <div className="infoContainer ">
@@ -58,6 +76,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
+            </motion.div>
         </div>
     </>
     );

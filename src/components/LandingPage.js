@@ -3,6 +3,7 @@ import SocialLinks from './SocialLinks';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import './LandingPage.css'
 
 const LandingPage = ({personalDetails}) => {
 
@@ -35,11 +36,11 @@ const LandingPage = ({personalDetails}) => {
             transition={{ duration: 1, ease: "easeInOut" }}>
 
         <div className='landing-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', letterSpacing: '5px', color: 'white' }}>
                 <h1>{personalDetails.name}</h1>
                 <h3>{personalDetails.statement}</h3>
                 <Link to='/about'>
-                    <button>Enter</button>
+                    <button className='loginbtn'>Enter</button>
                 </Link>
             </div>
         </div>

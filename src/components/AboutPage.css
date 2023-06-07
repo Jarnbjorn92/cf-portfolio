@@ -1,62 +1,59 @@
 /* About Me */
 .about-me {
     padding: 70px;
-    background-color: #f1f1f1;
+    background-color: #b0d6f9;
     border-top-left-radius: 70px;
     border-bottom-right-radius: 30px;
     margin: 40px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-me h4 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
     margin-bottom: 10px;
     text-decoration: underline;
+    letter-spacing: 5px;
 }
 
 .about-me .description {
     margin-top: 10px;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 17px;
+    color: #333;
 }
 
 .about-me p {
     margin-bottom: 10px;
 }
 
-.about-me a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.about-me a:hover {
-    text-decoration: underline;
-}
-
 
 /* Tech/Skill Section */
 .infoContainer {
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #b0d6f9;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 30px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tech-section h4 {
-    font-size: 20px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 10px;
     text-align: center;
     text-decoration: underline;
+    letter-spacing: 5px;
 }
 
 .tech-section {
     display: flex;
     justify-content: center;
+    
 }
 
 .tech-section .description {
@@ -66,6 +63,8 @@
     text-align: center;
     margin-top: 10px;
     line-height: 1.5;
+    color: #333;
+    
 }
 
 .tech-section .description li {
@@ -73,15 +72,17 @@
     font-size: 16px;
     margin-bottom: 5px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #708adc;
     border-radius: 15px;
     margin: 5px;
+    font-weight: bold;
+    color: white;
 }
 
 .skill-description {
-    list-style: none;
     margin-top: 5px;
     line-height: 2;
+    padding: 10px;
 }
 
 /* Media query for viewport width less than 750px */

@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <div className="App">
-    <img src={BackgroundImage} className='background'/>
+    <img src={BackgroundImage} className='background' alt='background-img'/>
         <Router>
             <Routes>
               <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />
