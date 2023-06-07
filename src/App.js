@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import PortfolioPage from './components/Portfolio/PortfolioPage';
+import BackgroundImage from './components/assets/Trianglify-5s-1440px.svg'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
     <div className="App">
+    <img src={BackgroundImage} className='background'/>
         <Router>
             <Routes>
               <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />

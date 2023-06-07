@@ -31,7 +31,6 @@ const AboutPage = () => {
                         <li>Java</li>
                         <li>TypeScript</li>
                         <li>React</li>
-                        <li>React Native</li>
                         <li>Docker</li>
                         <li>Node.js</li>
                         <li>Flask</li>
