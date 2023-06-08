@@ -6,7 +6,8 @@
         "technologies": "JavaScript // Java // React Native // Spring // SQL",
         "github": "https://github.com/Jarnbjorn92/Capstone_OotAndAboot",
         "deployed": "",
-        "id": "1"
+        "id": "1",
+        "color": "#708adc"
     },
     {
         "title": "The Blackhole",
@@ -15,7 +16,8 @@
         "technologies": "JavaScript // React // MongoDB // Docker",
         "github": "https://github.com/Jarnbjorn92/Portals",
         "deployed": "",
-        "id": "2"
+        "id": "2",
+        "color": "#b0d6f9"
     },
     {
         "title": "CodeClanzo_",
@@ -24,6 +26,7 @@
         "technologies": "Python // Flask // SQL // Django",
         "github": "https://github.com/Jarnbjorn92/CodeClanzo_",
         "deployed": "",
-        "id": "3"
+        "id": "3",
+        "color": "#e8faff"
     }
 ]
