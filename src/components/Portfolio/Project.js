@@ -50,8 +50,9 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
             onRequestClose={handleCloseModal}
                 style={{
                     content: {
-                        backgroundColor: "#101010",
-                        color: "#9f9f9f",
+                        backgroundColor: "#708adc",
+                        borderRadius: "15px",
+                        color: "white",
                         padding: "60px",
                         display: "flex",
                         flexDirection: "column",
@@ -63,6 +64,7 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
                         marginRight: "-50%",
                         transform: "translate(-50%, -50%)",
                         zIndex: "999",
+                        letterSpacing: '1px'
                     },
                 }}>
 

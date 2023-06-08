@@ -73,3 +73,18 @@
     width: 80%;
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    .projectCard {
+        width: 100%;
+    }
+    .tech {
+        font-size: 14pt;
+        top: 40%;
+        width: 100%;
+    }
+    .viewWork {
+        font-size: 14pt;
+        left: 50%;
+    }
+}

@@ -45,15 +45,15 @@ const LandingPage = ({personalDetails}) => {
             </div>
         </div>
         </motion.div>
-        
+
         <motion.div 
             ref={ref} 
             initial='hidden' 
             animate={inView ? 'visible' : 'hidden'} 
             variants={fadeInVariants}>
 
-        <SocialLinks/>
-        
+            <SocialLinks/>
+            
         </motion.div>
         </>
     );

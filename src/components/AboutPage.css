@@ -86,7 +86,7 @@
 }
 
 /* Media query for viewport width less than 750px */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .tech-section {
         display: grid;
     }

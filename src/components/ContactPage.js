@@ -74,7 +74,7 @@ const ContactPage = ({personalDetails}) => {
 
 
     return (
-        <div>
+        <div className='ContactPage'>
         <NavBar/>
         
         <section className='contactSection'>
@@ -132,7 +132,7 @@ const ContactPage = ({personalDetails}) => {
             value={formData.message}
             name="message"
             id="contactMessage"
-            rows="5"
+            rows="12"
             placeholder="Message"
             required
         ></textarea>
@@ -164,6 +164,8 @@ const ContactPage = ({personalDetails}) => {
                 <div className="infoType">Email</div>
                 <a href={`mailto:${personalDetails.email}`}>{personalDetails.email}</a>
             </div>
+
+            <hr/>
 
             <motion.div 
             ref={ref} 
