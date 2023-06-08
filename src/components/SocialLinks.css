@@ -1,11 +1,23 @@
 .social-cont {
-    /* position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-links {
-    margin: 15px;
-    font-size: 25pt;
+.social-links-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
 }
+
+.social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5a3faa;
+    transition: color 0.3s ease-in-out;
+}
+
+/* .social-link:hover {
+    color: #420457;
+    cursor: pointer;
+} */

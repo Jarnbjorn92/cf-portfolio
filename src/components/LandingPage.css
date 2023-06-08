@@ -13,3 +13,13 @@
     background-color: #420457;
     cursor: alias;
 }
+
+.social-icons-center {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100px;
+}
+
+
+
