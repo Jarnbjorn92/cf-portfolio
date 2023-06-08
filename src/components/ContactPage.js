@@ -59,11 +59,25 @@ const ContactPage = ({personalDetails}) => {
     .catch((err) => console.log(err));
 };
 
+    const fadeInVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.8,
+                duration: 0.5,
+            },
+        },
+    };
+
 
     return (
         <div>
         <NavBar/>
         
+        <section className='contactSection'>
         <motion.form
         action=""
         ref={ref}
@@ -75,7 +89,7 @@ const ContactPage = ({personalDetails}) => {
         >
 
         <h4 className="contentTitle">Message Me</h4>
-        <div className="formGroup" style={{ display: "inline-block" }}>
+        <div className="formGroup" style={{ display: "inline-block", margin: "5px" }}>
         <input
             type="text"
             className="formControl"
@@ -151,18 +165,20 @@ const ContactPage = ({personalDetails}) => {
                 <a href={`mailto:${personalDetails.email}`}>{personalDetails.email}</a>
             </div>
 
+            <motion.div 
+            ref={ref} 
+            initial='hidden' 
+            animate={inView ? 'visible' : 'hidden'} 
+            variants={fadeInVariants}>
+        
+            <SocialLinks/>
+            </motion.div>
         </motion.div>
+        </section>
 
-        <motion.div
-        action=""
-        ref={ref}
-        className="socials"
-        initial={{ x: "-10vw", opacity: 0 }}
-        animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
-        >
-        <SocialLinks/>
-        </motion.div>
+
+
+        
         </div>
     )
 };

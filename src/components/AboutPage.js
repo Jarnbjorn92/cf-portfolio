@@ -18,7 +18,7 @@ const AboutPage = () => {
         <div className='about-container'>
         <NavBar/>
         <motion.div
-            className="contactInfo"
+            className="aboutInfo"
             ref={ref}
             initial={{ x: "25vw", opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}

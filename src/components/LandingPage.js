@@ -29,7 +29,7 @@ const LandingPage = ({personalDetails}) => {
 
         <>
         <motion.div
-            className="contactInfo"
+            className="landing"
             ref={ref}
             initial={{ x: "50vw", opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
