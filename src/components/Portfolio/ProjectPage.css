@@ -60,4 +60,16 @@
 
 .viewWork {
     font-style: italic;
+    position: fixed;
+    bottom: 15%;
+    left: 65%;
+    font-size: 18pt;
+}
+
+.tech {
+    position: absolute;
+    top: 45%;
+    font-size: 18pt;
+    width: 80%;
+    text-align: center;
 }
