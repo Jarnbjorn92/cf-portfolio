@@ -1,7 +1,7 @@
 [
     {
         "title": "Oot'N'Aboot",
-        "image": "../../projectImages/OotNAboot-logo.jpeg",
+        "image": "https://i.imgur.com/N0fhCy9.jpg",
         "description": "An event finder mobile app. The user can find events happening in a location, favourite events to a list, buy tickets, and even find other users to go with!",
         "technologies": "JavaScript // Java // React Native // Spring // SQL",
         "github": "https://github.com/Jarnbjorn92/Capstone_OotAndAboot",
@@ -11,7 +11,7 @@
     },
     {
         "title": "The Blackhole",
-        "image": "../../projectImages/blackhole.png",
+        "image": "https://i.imgur.com/vMycj1i.png",
         "description": "Portal themed web game based off of the classic boardgame 'snakes and ladders'. 2-Player game that tracks users scores and provides feedback with a scoreboard.",
         "technologies": "JavaScript // React // MongoDB // Docker",
         "github": "https://github.com/Jarnbjorn92/Portals",
@@ -21,7 +21,7 @@
     },
     {
         "title": "CodeClanzo_",
-        "image": "../../projectImages/codeclanzo.png",
+        "image": "https://i.imgur.com/rXcRigb.png",
         "description": "Spending tracker app that can create a user, add/display/delete transactions, and provide a total spend for each user.",
         "technologies": "Python // Flask // SQL // Django",
         "github": "https://github.com/Jarnbjorn92/CodeClanzo_",

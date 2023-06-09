@@ -12,7 +12,7 @@
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
@@ -45,7 +45,8 @@
 
 .imageContainer img {
     height: 12em;
-    margin-top: 25px;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 .closeModal {
@@ -62,16 +63,36 @@
     font-style: italic;
     position: fixed;
     bottom: 15%;
-    left: 65%;
-    font-size: 18pt;
+    left: 68%;
+    font-size: 16pt;
+    background-color: rgba(224, 245, 255, 0.8);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .tech {
     position: absolute;
     top: 45%;
     font-size: 18pt;
+    font-weight: bold;
     width: 80%;
     text-align: center;
+    background-color: rgba(224, 245, 255, 0.8);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.modalTitle {
+    text-decoration: underline;
+}
+
+.projectTitle {
+    background-color: rgba(224, 245, 255, 0.8);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 7px;
 }
 
 @media screen and (max-width: 800px) {
