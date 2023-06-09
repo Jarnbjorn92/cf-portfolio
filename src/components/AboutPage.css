@@ -87,13 +87,25 @@
 
 /* Media query for viewport width less than 750px */
 @media (max-width: 800px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .aboutInfo {
+        margin-top: 20px;
+    }
+
+    .about-me,
     .tech-section {
+        padding: 20px;
         display: grid;
     }
-    .about-me {
-        padding: 12px;
+
+    .infoContainer {
+        margin-bottom: 20px;
     }
 }
+
 
 
 
