@@ -130,6 +130,7 @@
 .nav-menu a:hover::after {
     color: #5a3faa;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-menu .active {

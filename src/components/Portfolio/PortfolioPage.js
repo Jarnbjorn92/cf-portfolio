@@ -1,5 +1,5 @@
 import React from 'react';
-import portfolioData from './portfolioData.json';
+import portfolioData from './portfolioData';
 import Project from './Project';
 import NavBar from '../../NavBar';
 import '../AboutPage.css';
@@ -10,7 +10,7 @@ const PortfolioPage = () => {
     const ProjectList = () =>
 
     portfolioData.map((project, index) => (
-        <Project
+            <Project
             key={index}
             id={project.id}
             title={project.title}
@@ -28,7 +28,7 @@ const PortfolioPage = () => {
         <NavBar/>
             <div className='container'>
                 <div className='column'>
-                    <ProjectList/>
+                    <ProjectList />
                 </div>
             </div>
         </div>

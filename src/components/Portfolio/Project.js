@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
-import closeModal from './projectImages/close.svg';
+import closeModal from '../../projectImages/close.svg';
 import "./ProjectPage.css";
 
 const Project = ({technologies, title, color, image, id, github, deployed, description}) => {
@@ -20,6 +20,9 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
         hidden: { x: id % 2 === 0 ? "10vw" : "-10vw", opacity: 0 },
         visible: { x: 0, opacity: 1 },
     };
+
+    // Import the image using require
+    // const projectImage = require(`./projectImages/${image}`).default;
     
     Modal.setAppElement("#root");
 
@@ -41,9 +44,9 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
             </p>
                 <span className="viewWork">Click to View More &#8594;</span>
             </div>
-            {/* <div className="imageContainer">
+            <div className="imageContainer">
                 <img src={image} alt="Home-page" />
-            </div> */}
+            </div>
         </div>
         <Modal
             isOpen={showModal}
@@ -71,6 +74,9 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
             <img src={closeModal} className="closeModal" onClick={handleCloseModal} alt="Close"></img>
                 <h3 className="modalTitle">{title}</h3>
                 <p className="projectDescription">{description}</p>
+                <div className="imageContainer">
+                <img src={image} alt="Home-page" />
+            </div>
                 <button className="btn" onClick={() => (window.open(github))}>
                     GitHub Repo
                 </button>
@@ -83,4 +89,4 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
     );
 };
 
-export default Project
+export default Project;

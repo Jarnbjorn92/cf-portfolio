@@ -10,14 +10,15 @@
     padding: 0;
 }
 
-.social-link {
-    margin: 0 10px;
+.social-links {
+    margin: 0 15px;
+    font-size: 32pt;
     text-decoration: none;
     color: #5a3faa;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
-/* .social-link:hover {
+.social-links:hover {
     color: #420457;
     cursor: pointer;
-} */
+}

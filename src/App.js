@@ -4,7 +4,8 @@ import LandingPage from './components/LandingPage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import PortfolioPage from './components/Portfolio/PortfolioPage';
-import BackgroundImage from './components/assets/Trianglify-5s-1440px.svg'
+import BackgroundImage from './components/assets/Trianglify-5s-1440px.svg';
+import React from 'react';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     availability: "Open to work",
     statement: "Junior Software Developer",
   };
+  
 
   return (
     <>
