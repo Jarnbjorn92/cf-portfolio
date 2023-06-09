@@ -1,5 +1,5 @@
 .contactInfo {
-    background: #b0d6f9;
+    background: #e0f5ff;
     color: #333;
     padding: 20px;
     width: 300px;
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .contactForm {
-    background: #b0d6f9;
+    background: #e0f5ff;
     padding: 20px;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 30px;

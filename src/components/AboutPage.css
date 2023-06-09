@@ -1,7 +1,7 @@
 /* About Me */
 .about-me {
     padding: 70px;
-    background-color: #b0d6f9;
+    background-color: #e0f5ff;
     border-top-left-radius: 70px;
     border-bottom-right-radius: 30px;
     margin: 40px;
@@ -31,7 +31,7 @@
 /* Tech/Skill Section */
 .infoContainer {
     padding: 10px;
-    background-color: #b0d6f9;
+    background-color: #e0f5ff;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 30px;
     margin: 20px;
