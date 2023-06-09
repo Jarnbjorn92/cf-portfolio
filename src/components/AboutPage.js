@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const AboutPage = () => {
 
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0,
         triggerOnce: true,
     });
 
