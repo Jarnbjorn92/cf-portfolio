@@ -178,7 +178,11 @@ const ContactPage = ({personalDetails}) => {
         </motion.div>
         </section>
 
-
+        <section>
+            <div>
+                <button>Download CV</button>
+            </div>
+        </section>
 
         
         </div>
