@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import NavBar from '../NavBar';
 import SocialLinks from './SocialLinks';
 import './ContactPage.css';
+import cv from './assets/Connor_fleming_software_developer.pdf'
 
 const ContactPage = ({personalDetails}) => {
 
@@ -13,6 +14,7 @@ const ContactPage = ({personalDetails}) => {
     });
 
     const [success, setSuccess] = useState(false);
+    const [download, setDownload] = useState(false);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -33,6 +35,19 @@ const ContactPage = ({personalDetails}) => {
         event.preventDefault();
 
     const data = JSON.stringify(formData);
+
+    const handleDownload = () => {
+        setDownload(true);
+        const link = document.createElement("a");
+        link.href = cv;
+        link.download = "Connor_Fleming_CV.pdf";
+        link.onload = () => {
+            link.remove();
+            setDownload(false);
+        };
+        document.body.appendChild(link);
+        link.click();
+    };
 
     fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -172,19 +187,15 @@ const ContactPage = ({personalDetails}) => {
             initial='hidden' 
             animate={inView ? 'visible' : 'hidden'} 
             variants={fadeInVariants}>
-        
-            <SocialLinks/>
+
+                <SocialLinks/>
+                <div className='cv-section'>
+                    <button className='btn' onClick={handleDownload}>Download CV</button>
+                </div>
+
             </motion.div>
         </motion.div>
         </section>
-
-        <section>
-            <div>
-                <button>Download CV</button>
-            </div>
-        </section>
-
-        
         </div>
     )
 };

@@ -89,13 +89,21 @@ a:hover {
     border: none;
     border-radius: 4px;
     font-size: 12pt;
-    margin-top: 10px;
+    margin-top: 0px;
     letter-spacing: 1px;
 }
 
 .btn:hover {
     background-color: #420457;
     cursor: alias;
+}
+
+.cv-section {
+    background: #bfe7fa;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 10px;
 }
 
 @media (max-width: 800px) {
