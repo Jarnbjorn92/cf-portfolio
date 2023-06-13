@@ -25,7 +25,6 @@ const PortfolioPage = () => {
     return (
         <div>
         <NavBar/>
-        {/* <img src={Oot}/> */}
             <div className='container'>
                 <div className='column'>
                     <ProjectList />

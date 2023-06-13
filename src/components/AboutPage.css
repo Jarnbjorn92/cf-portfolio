@@ -6,6 +6,9 @@
     border-bottom-right-radius: 30px;
     margin: 40px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-me h4 {
@@ -85,7 +88,19 @@
     padding: 10px;
 }
 
-/* Media query for viewport width less than 750px */
+.profile-pic-cont {
+    flex: 0 0 auto;
+    margin-left: 30px;
+}
+
+.profile-pic-cont img {
+    width: 500px; 
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Media queries */
 @media (max-width: 800px) {
     .about-container {
         padding: 20px;

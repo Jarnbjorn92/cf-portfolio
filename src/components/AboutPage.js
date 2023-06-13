@@ -26,8 +26,8 @@ const AboutPage = () => {
             >
 
             <section className='about-me'>
-                <h4>About Me</h4>
                 <div className='description'>
+                <h4>About Me</h4>
                 <p>I'm Connor, a passionate full stack developer with a deep love for crafting exceptional user experiences on the frontend and optimising backends. As a career changer, I bring a unique blend of soft skills from my previous jobs and an ambitious mindset to the tech scene.</p>
 
                 <p>Driven by a hunger for knowledge and a knack for quickly picking up new technologies, I thrive on learning and expanding my skill set. From frontend frameworks like React, to backend technologies such as Node.js and Spring, I'm dedicated to mastering the stack and all aspects of the developement process.</p>
@@ -35,6 +35,9 @@ const AboutPage = () => {
                 <p>Through this portfolio site, I aim to showcase my expertise, projects, and growth as a developer. It's a testament to my journey and the commitment I have to my craft. I believe that being a successful full stack developer is not just about technical prowess; it's about effective communication, collaboration, and delivering innovative solutions.</p>
 
                 <p>I invite you to explore my portfolio, where you'll find a collection of my work, including web applications, responsive designs, and interactive experiences. Whether you're a potential client, collaborator, or fellow developer, I'm eager to connect, share insights, and embark on exciting projects together.</p>
+                </div>
+                <div className='profile-pic-cont'>
+                    <img src='https://i.imgur.com/b7PHhMp.jpg' alt='profile-pic'/>
                 </div>
             </section>
             

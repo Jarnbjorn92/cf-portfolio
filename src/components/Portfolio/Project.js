@@ -56,9 +56,6 @@ const Project = ({technologies, title, color, image, id, github, deployed, descr
             </p>
                 <span className="viewWork">Click to View More &#8594;</span>
             </div>
-            {/* <div className="imageContainer">
-                <img src={image} alt="Home-page" />
-            </div> */}
         </div>
         <Modal
             isOpen={showModal}
