@@ -4,7 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import NavBar from '../NavBar';
 import SocialLinks from './SocialLinks';
 import './ContactPage.css';
-import cv from './assets/Connor_fleming_software_developer.pdf';
 
 const ContactPage = ({ personalDetails }) => {
     const [ref, inView] = useInView({
@@ -30,6 +29,8 @@ const ContactPage = ({ personalDetails }) => {
         });
     };
 
+
+    //Form submit data and email target (handled by web3forms API)
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -63,12 +64,13 @@ const ContactPage = ({ personalDetails }) => {
     // Download CV Function
     const handleDownload = () => {
         const filename = 'Connor_fleming_software_developer.pdf';
-        const filePath = './assets/Connor_fleming_software_developer.pdf';
+        const fileURL = 'https://cf-personal-site-bucket.s3.eu-west-2.amazonaws.com/Connor_fleming_software_developer.pdf';
 
         // Create a temporary anchor element
         const link = document.createElement('a');
-        link.href = filePath;
+        link.href = fileURL;
         link.download = filename;
+        link.target = '_blank'; //Open in new window
 
         // Append the anchor to the body and trigger the download
         document.body.appendChild(link);
