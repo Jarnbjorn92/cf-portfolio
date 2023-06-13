@@ -49,11 +49,11 @@ const LandingPage = ({ personalDetails }) => {
                 height: "650px",
             }}
             >
-            <div style={{ textAlign: "center", letterSpacing: "5px", color: "white" }}>
+            <div style={{ textAlign: "center", letterSpacing: "6px", color: "white", fontSize: "18pt" }}>
                 <h1>{personalDetails.name}</h1>
                 <h3>{personalDetails.statement}</h3>
                 <Link to="/about">
-                <button className="loginbtn">Enter</button>
+                    <button className="loginbtn">Enter</button>
                 </Link>
             </div>
                 <motion.div

@@ -119,6 +119,11 @@
     .infoContainer {
         margin-bottom: 20px;
     }
+
+    .profile-pic-cont img {
+        max-width: 400px;
+        margin-top: 20px;
+    }
 }
 
 
