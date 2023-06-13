@@ -106,16 +106,15 @@ a:hover {
     margin: 10px;
 }
 
-@media (max-width: 800px) {
-    .contactSection {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-}
 @media screen and (max-width: 800px) {
     .contactInfo,
     .contactForm {
         width: 100%;
+    }
+    .contactSection {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
     }
 }
