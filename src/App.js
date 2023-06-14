@@ -24,7 +24,7 @@ function App() {
     <img src={BackgroundImage} className='background' alt='background-img'/>
         <Router>
             <Routes>
-              <Route path='/' element={<LandingPage personalDetails={personalDetails}/>} />
+              <Route path='/cf-portfolio' element={<LandingPage personalDetails={personalDetails}/>} />
               <Route path='/about' element={<AboutPage/>} />
               <Route path='/portfolio' element={<PortfolioPage/>} />
               <Route path='/contact' element={<ContactPage personalDetails={personalDetails}/>} />
