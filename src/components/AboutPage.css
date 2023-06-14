@@ -124,3 +124,13 @@
         margin-top: 20px;
     }
 }
+
+@media (max-width: 500px) {
+    .about-container {
+        padding: 20px;
+        width: 75%;
+    }
+    .about-me .description {
+        font-size: 10pt;
+    }
+}
