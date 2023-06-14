@@ -72,7 +72,8 @@ const AboutPage = () => {
                 <h4>Skills</h4>
                     <div className="skill-description">
                         <li>Test Driven Development</li>
-                        <li>Ability to learn new languages & software quickly Project management with Agile methodologies</li>
+                        <li>Ability to learn new languages & software quickly</li>
+                        <li>Project management with Agile methodologies</li>
                         <li>Excellent communicator</li>
                         <li>GitHub</li>
                         <li>RESTful API Design</li>

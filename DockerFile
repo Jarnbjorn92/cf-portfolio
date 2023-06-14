@@ -1,11 +1,12 @@
 FROM node:19-alpine
 
 COPY ./package.json /app/
+COPY ./public /app/
 COPY ./src /app/
 
-RUN npm install --production
+WORKDIR /app/
 
-WORKDIR /app
+RUN npm install --production
 
 CMD ["npm", "start"]
 
