@@ -1,27 +1,28 @@
 /* About Me */
 .about-me {
-    padding: 20px;
+    padding: 70px;
     background-color: #e0f5ff;
-    border-radius: 30px;
-    margin: 20px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 30px;
+    margin: 40px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .about-me h4 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
     margin-bottom: 10px;
     text-decoration: underline;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 .about-me .description {
     margin-top: 10px;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
 }
 
@@ -29,11 +30,13 @@
     margin-bottom: 10px;
 }
 
+
 /* Tech/Skill Section */
 .infoContainer {
     padding: 10px;
     background-color: #e0f5ff;
-    border-radius: 30px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 30px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -47,13 +50,13 @@
     margin-bottom: 10px;
     text-align: center;
     text-decoration: underline;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 .tech-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .tech-section .description {
@@ -64,13 +67,14 @@
     margin-top: 10px;
     line-height: 1.5;
     color: #333;
+    
 }
 
 .tech-section .description li {
-    flex: 0 0 auto;
-    font-size: 14px;
+    flex: 1;
+    font-size: 16px;
     margin-bottom: 5px;
-    padding: 10px 15px;
+    padding: 20px;
     background-color: #708adc;
     border-radius: 15px;
     margin: 5px;
@@ -80,22 +84,21 @@
 
 .skill-description {
     margin-top: 5px;
-    line-height: 1.5;
+    line-height: 2;
     padding: 10px;
-    max-width: 400px;
-    text-align: center;
+    width: 400px;
 }
 
 .profile-pic-cont {
     flex: 0 0 auto;
-    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .profile-pic-cont img {
-    width: 100%;
-    max-width: 500px;
+    width: 500px; 
     height: auto;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
 }
 
 /* Media queries */
@@ -111,6 +114,8 @@
     .about-me,
     .tech-section {
         padding: 20px;
+        display: grid;
+        
     }
 
     .infoContainer {
@@ -118,8 +123,7 @@
     }
 
     .profile-pic-cont img {
-        width: 100%;
-        max-width: 200px;
+        width: 300px;
         height: auto;
         margin-top: 20px;
     }
@@ -134,3 +138,9 @@
         font-size: 18pt;
     }
 }
+
+
+
+
+
+
