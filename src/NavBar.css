@@ -183,4 +183,7 @@
     .dropdown {
         right: 70%;
     }
+    .dropdown-menu{
+        right: 0px
+    }
 }
