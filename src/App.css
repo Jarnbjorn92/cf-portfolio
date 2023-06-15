@@ -38,5 +38,9 @@
   .background {
     transform: scale(3);
   }
+  .footer-cr {
+    font-size: 8pt;
+    width: 70%
+  }
 }
 

@@ -118,3 +118,14 @@ a:hover {
         margin-right: 10%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .contactInfo,
+    .contactForm {
+        width: 90%;
+    }
+    .contactInfo{
+        width: 100%;
+        padding: 0;
+    }
+}

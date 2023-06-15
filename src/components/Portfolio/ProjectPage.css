@@ -111,3 +111,9 @@
         margin-right: 25%;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .column {
+        margin-right: 35%;
+    }
+}
