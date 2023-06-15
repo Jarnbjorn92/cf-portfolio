@@ -129,7 +129,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .about-container {
         padding: 20px;
         width: 90%;
