@@ -151,13 +151,13 @@
 
 @media (max-width: 500px) {
     .about-container{
-        width: 80%;
+        width: 90%;
     }
     .profile-pic-cont img {
         width: 300px;
     }
     .tech-section {
-        width: 70%;
+        width: 90%;
     }
 }
 
