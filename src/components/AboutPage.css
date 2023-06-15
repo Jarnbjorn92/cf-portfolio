@@ -161,6 +161,12 @@
     }
 }
 
+@media (max-width: 400px) {
+    .profile-pic-cont img {
+        width: 200px;
+    }
+}
+
 
 
 
