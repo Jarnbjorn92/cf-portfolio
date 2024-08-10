@@ -14,7 +14,7 @@ function App() {
     location: "Glasgow, Scotland",
     email: "connor.fleming1992@gmail.com",
     availability: "Open to work",
-    statement: "Junior Software Developer",
+    statement: "Software Developer",
   };
   
 
